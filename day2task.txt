@@ -1,0 +1,11 @@
+Document object
+  1. It is an object of window.
+  2. It shows the document loaded in the window.
+  3. Webpage based changes.
+  4. It is a Webpage.
+
+Window Object  
+  1. It is an object of the browser.
+  2. Browser based changes.
+  3. It represents the browser window.
+  4. It is a Browser.
