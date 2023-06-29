@@ -1,0 +1,137 @@
+1.//IIFE function print odd numbers in array
+(function(){
+    var a=[1,2,3,4,5,6,7,8,9,10];
+    for(var i=0;i<a.length;i++){
+        if(a[i]%2!=0){console.log("The odd number is",a[i]);}
+    }
+})();
+------------------------------------------------------------------------------
+2.//IIFE function print To capital letters in array
+(function(){
+    var a=["tesla","astinmartin","volvo"];
+    for(var i=0;i<a.length;i++){
+        console.log(a[i].toUpperCase());    
+    }
+})();
+-------------------------------------------------------------------------------
+3.//IIFE function sum of all numbers in array
+(function(){
+    var a=[1,2,3,4,5,6,7,8,9,10];
+    var sum=0;
+    for(var i=0;i<a.length;i++){
+        sum=sum+a[i];  
+    }
+    console.log("Sum of numbers in array ",sum);
+})();
+---------------------------------------------------------------------------------
+4.//ananomous function to remoe duplicate in array
+var a=["a","b","a","c","b"];
+var op=a.filter(
+    function(item,index){
+        return a.indexOf(item)===a.lastIndexOf(item);
+    }
+);
+console.log(op);
+---------------------------------------------------------------------------------
+5.//IIFE palindrome logic
+var pal=["Malayalam","Hello","Madam"];
+(function(){
+    for(var i=0;i<pal.length;i++){
+        if(pal[i].toLowerCase()===pal[i].toLowerCase().split("").reverse().join(""))
+        {
+            console.log("Palindrome is ",pal[i]);
+        }
+    }
+})();
+---------------------------------------------------------------------------------
+6. //is prime
+var num = [1,2,3,45,6,7,8,9,10,11,12,13,14,15,17,19];
+var result = [];
+function isPrime(num) {
+  if(num < 2) return false;
+
+  for (let k = 2; k < num; k++){
+    if(num % k == 0){
+      return false;
+    }
+  }
+  return true;
+}
+num.forEach(function (element) {
+  const item = isPrime(element);
+  if (item) {
+    result.push(element);
+  }
+});
+console.log(result); 
+------------------------------------------------------------------
+ 7.//sorting of array
+(function(){
+    var car=["Rangerover","Mercedes","Tata","Toyota","Astin"];
+    console.log(car.sort());
+})();
+---------------------------------------------------------------------
+----------------------------------------------------------------------
+ARROW FUNCTION
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+1.//odd number
+var name =(num)=>{
+    if(num%2!=0){
+    console.log(num);}
+}
+var n=[1,2,3,4,5,6,7,8,9,10];
+for(var i=0;i<n.length;i++){
+name(n[i]);}
+---------------------------------------------------------------------------
+2.//capital letters
+var name =(num)=>{
+    var cap=num.toUpperCase();
+    console.log(cap);
+}
+var n=["Salem sf exp","Intercity sf exp","Mangalore exp"];
+for(var i=0;i<n.length;i++){
+name(n[i]);}
+------------------------------------------------------------------------------
+3.//sumof numbers in array
+var name =()=>{
+var n=[1,2,3,4,5,6,7,8,9,10];
+var temp=0;
+for(var i=0;i<n.length;i++){
+temp=temp+n[i];
+}console.log(temp);    
+}
+name();
+--------------------------------------------------------------------------------
+//4.palindrome or not in arrow func
+var name =(nu)=>{
+if(nu[i].toLowerCase()===nu[i].toLowerCase().split("").reverse().join())
+{
+console.log(n[i], "is palindrome");}}
+var n=["Malayalam","madam","racecar","sir"];
+for(var i=0;i<n.length;i++){
+name(n[i]);}
+---------------------------------------------------------------------------------
+5.//prime numbers or not
+var car=()=>{
+var num = [1,2,3,45,6,7,8,9,10,11,12,13,14,15,17,19];
+var result = [];
+function isPrime(num) {
+  if(num < 2) return false;
+
+  for (let k = 2; k < num; k++){
+    if(num % k == 0){
+      return false;
+    }
+  }
+  return true;
+}
+num.forEach(function (element) {
+  const item = isPrime(element);
+  if (item) {
+    result.push(element);
+  }
+});
+console.log(result);}
+car();
+-----------------------------------------------------------------------------------
