@@ -1,0 +1,51 @@
+{
+    "resume":{
+        "name":"Vimal karthik",
+        "email":"vimalkarthik315@gmail.com",
+        "phone":9944762136,
+        "degree":"B.E",
+        "profile":"",
+        "picture":"",
+        "address":"Salem",
+        "city":"Salem",
+        "state":"Tamil Nadu",
+        ""
+    }
+    "profiles":{
+        "linkedin":"",
+        "github link":"",
+        "portfolio":""
+    }
+    "education":{
+        "degree":"BE",
+        "college":"Sona college salem",
+        "grade":8.32
+        "specialization":"EEE"
+    }
+    "Skills":[{
+        "name":"Java","level":7.5},{
+        "name":"Ux design","level":5},{
+        "name":"Testing","level":6.5
+    }]
+    "languages":{
+        ["name":"Tamil","fluency":"Native"],
+        ["name":"English","fluency":"fluent"],
+        ["name":"Telugu","fluency":"spoken"],
+    }
+    "certification":{
+        "name":"BEC",
+        "issued":"Cambridege UK"
+    }
+    "project":{
+        "title":"",
+        "description":"",
+        "duration":,
+    }
+    "extra curricular":{
+        "title":"student coordinator",
+        "club":"Speakers fourm",
+        "duration":"",
+        "highlight":""
+    }
+   
+}
