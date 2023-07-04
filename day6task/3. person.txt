@@ -1,0 +1,9 @@
+class person{
+    constructor(name,gender,age,city){
+        this.name=name;this.gender=gender;this.age=age;this.city=city;
+    }
+}
+var p=new person("vimal","male",24,"Salem");
+var p1=new person("Gopi","male",25,"Salem");
+var p2=new person("Tamil","male",26,"Salem");
+console.log(p.name);console.log(p1.age);console.log(p2.city);

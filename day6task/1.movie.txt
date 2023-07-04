@@ -1,0 +1,53 @@
+1.
+class movie{
+    constructor(title,studio,rating){
+        this.title=title;this.studio=studio;this.rating=rating;
+    }
+    
+}
+var m=new movie("Quiet Place", "Universal","PG13");
+console.log(m);
+
+-----------------------------------------------------------------------------
+2.
+class movie{
+    constructor(title,studio,rating){
+        this.title=title;this.studio=studio;this.rating=rating;
+    }
+    set rat(mrat){
+        this.rating=mrat;
+    }
+}
+var m=new movie("Quiet Place", "Universal","PG13");
+console.log(m);
+m.rat="PG";
+console.log(m.rating);
+
+-----------------------------------------------------------------------------
+3.
+class movie{
+    constructor(title,studio,rating){
+        this.title=title;this.studio=studio;this.rating=rating;
+    }
+    getrat(){
+        return "Rating of the movie "+this.title+" is "+this.rating
+    }
+}
+var m=new movie("Quiet Place", "Universal","PG");
+console.log(m);
+console.log(m.getrat());
+----------------------------------------------------------------------------------
+4.
+class movie{
+    constructor(title,studio,rating){
+        this.title=title;this.studio=studio;this.rating=rating;
+    }
+    getrat(){
+        return "Rating of the movie "+this.title+" is "+this.rating
+    }
+}
+var m=new movie("Casino Royale", "Eon Productions","PG13");
+console.log(m);
+console.log(m.getrat());
+
+-----------------------------------------------------------------------------------

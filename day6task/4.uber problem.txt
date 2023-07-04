@@ -1,0 +1,13 @@
+class uber{
+    constructor(distance){
+        
+        this.distance=distance;
+    }
+    getfare() {
+    const base=12;
+        let fare=base*parseInt(this.distance);
+        return fare;
+    }
+}
+var u=new uber(100);
+console.log(u.getfare())

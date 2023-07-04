@@ -1,0 +1,102 @@
+1.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+}
+var c=new circle(7.0,"white");
+console.log(c)
+----------------------------------------------------------------------
+2.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+}
+var c=new circle(7.41,"white");
+console.log(c);
+console.log(c.radius);
+console.log(c.color);
+--------------------------------------------------------------------------
+3.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+}
+var c=new circle(7.41,"white");
+console.log(c);
+console.log("Radius = "+c.radius);
+console.log("Colour = "+ c.color);
+-----------------------------------------------------------------------------
+4.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+    getradius(){
+        return "Radius of the Circle is "+this.radius;
+    }
+    
+}
+var c=new circle(7.41,"white");
+console.log(c.getradius());
+-------------------------------------------------------------------------------
+5.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+    set rad(madrad){
+        this.radius = madrad;
+    }
+    
+}
+var c=new circle(7.41,"white");
+c.rad=3.14;
+console.log(c.radius);
+--------------------------------------------------------------------------------
+6.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+    set clr(modclr){
+        this.color = modclr;
+    }
+    
+}
+var c=new circle(7.41,"white");
+c.clr="RED";
+console.log(c.color);
+----------------------------------------------------------------------------------
+7.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+    getarea(){
+    const pi=3.14;
+    let area =pi*parseInt(this.radius)*parseInt(this.radius);
+    return "Area of circle "+area;
+    }
+}
+var c=new circle(7,"white");
+console.log(c.getarea());
+
+-----------------------------------------------------------------------------------
+8.
+class circle{
+    constructor(radius,color){
+        this.radius=radius;this.color=color;
+    }
+    getcir(){
+    const pi=3.14;
+    let area =pi*parseInt(this.radius)*2;
+    return "Circumference of circle "+area;
+    }
+}
+var c=new circle(7,"white");
+console.log(c.getcir());
+
+------------------------------------------------------------------------------------
