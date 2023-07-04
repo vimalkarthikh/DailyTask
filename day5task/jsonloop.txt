@@ -1,0 +1,18 @@
+var json='{"car":"Tata","bus":"Volvo"}';
+var jobj=JSON.parse(json);
+console.log(jobj)
+let arr=[];
+///for in loop
+for(let key in jobj){
+    console.log(jobj[key])
+}
+
+////for loop
+const da=Object.entries(jobj);
+for(var i=0;i<da.length;i++){
+    console.log(da[i])
+}
+
+for(let k of da){
+    console.log(k)
+}
