@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <script>
+      var req=new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v3.1/all");
+req.send();
+req.onload=function(){
+    var r=JSON.parse(req.response);
+    var a=[];
+    for(var i=0;i<r.length;i++){
+        a.push(r[i].population);
+    }//console.log(a);
+    var pop=a.reduce((acc,ele)=>acc+ele,0);
+    console.log(pop);
+
+    
+}
+    </script>
+  </body>
+</html>

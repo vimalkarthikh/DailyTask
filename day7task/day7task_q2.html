@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <script>
+      var req=new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v3.1/all");
+req.send();
+req.onload=function(){
+    var r=JSON.parse(req.response);
+    var res=r.filter((e)=>e.population<200000);
+    console.log(res);
+    var n=res.map((a)=>a.name);
+    console.log(n);
+}
+    </script>
+  </body>
+</html>

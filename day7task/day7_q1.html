@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <script>
+      var req=new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v3.1/all");
+req.send();
+req.onload=function(){
+    var r=JSON.parse(req.response);
+    var res=r.filter((e)=>e.region==="Asia");
+    console.log(res);
+}
+    </script>
+  </body>
+</html>

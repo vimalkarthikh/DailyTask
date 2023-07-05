@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>XMLHttpRequest</title>
+  </head>
+  <body>
+    <script>
+      var req=new XMLHttpRequest();
+req.open("GET","https://restcountries.com/v3.1/all");
+req.send();
+req.onload=function(){
+    var r=JSON.parse(req.response);
+    for(var i=0;i<r.length;i++){
+      console.log(r[i].flag);
+      cosole.log(r[i].name);
+      console.log(r[i].capital);
+    }
+}
+    </script>
+  </body>
+</html>
